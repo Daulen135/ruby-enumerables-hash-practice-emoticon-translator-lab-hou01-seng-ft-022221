@@ -31,16 +31,17 @@ def get_japanese_emoticon(path, emoticon)
 
     emoji_lib.each do |name,hash| 
     
-  if hash[:english]==emoticon
+      if hash[:english]==emoticon
+        binding.pry
     jap_string=hash[:japanese]
-  end
-end
+      end
+    end
 
-  if jap_string=="" 
-    return "Sorry, that emoticon was not found"
-  else
-  jap_string
-  end
+      if jap_string=="" 
+      return "Sorry, that emoticon was not found"
+      else
+      jap_string
+      end
   
   
 end
